@@ -1,0 +1,21 @@
+.text
+# Includes all 4 instructions, all registers, and spacing variations
+
+PLUS X2, X1, X2        # X2 = X1 + X2
+CROSS X1, X0, X3       # X1 = X0 * X3
+LOAD X2, X3, X1        # X2 = M[X3, X1]
+CROSS X0, X2, X1       # X0 = X2 * X1
+PLUS X3 X2 X1          # X3 = X2 + X1
+STORE X3 X1 X0         # M[X1, X0] = X3
+PLUS   X2 ,   X2 X0    # X2 = X2 + X0
+CROSS X0 ,X1,  X3      # X0 = X1 * X3
+STORE X0, X2 , X0      # M[X2, X0] = X0
+
+.data
+0
+1
+2
+34
+5
+6
+
